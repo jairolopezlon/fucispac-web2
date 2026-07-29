@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer with FUCISPAC — Join Us</title>
+  <meta name="description" content="Join FUCISPAC as a volunteer. Make a difference in Afro-Colombian communities through education, culture, leadership, and more." />
+  <meta property="og:title" content="Volunteer with FUCISPAC — Join Us" />
+  <meta property="og:description" content="Join FUCISPAC as a volunteer. Make a difference in Afro-Colombian communities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fucispac.org/volunteering.html" />
+  <meta property="og:image" content="https://www.fucispac.org/img/og-volunteering.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.fucispac.org/volunteering.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/volunteering.css" />
+</head>
+<body data-page="volunteering">
+  <div id="header"></div>
+
+  <main>
+    <section class="page-banner">
+      <img class="page-banner__bg" src="img/volunteering-banner.webp" alt="" aria-hidden="true" />
+      <div class="page-banner__overlay"></div>
+      <div class="container page-banner__content">
+        <h1>Join Us as a Volunteer</h1>
+      </div>
+    </section>
+
+    <section class="section why-volunteer">
+      <div class="container">
+        <h2 class="section__title">Why Volunteer?</h2>
+        <div class="why-volunteer__grid">
+          <div class="why-volunteer__content">
+            <p>Volunteering with FUCISPAC is an opportunity to create real impact in Afro-Colombian communities. You'll gain valuable experience, learn from community leaders, and contribute to meaningful change in education, women's empowerment, and cultural preservation.</p>
+            <ul>
+              <li><span class="material-symbols-outlined">check_circle</span> Community impact that lasts</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Transformative experiences</li>
+              <li><span class="material-symbols-outlined">check_circle</span> Learning and growth opportunities</li>
+            </ul>
+          </div>
+          <img src="img/volunteer-why.webp" alt="Volunteers working with the community" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section volunteer-areas">
+      <div class="container">
+        <h2 class="section__title">Volunteer Areas</h2>
+        <div class="volunteer-areas__grid">
+          <article class="card">
+            <div class="card__badge">Area</div>
+            <h3 class="card__title">Education</h3>
+            <p class="card__description">Support tutoring, literacy programs, and educational workshops for children and youth.</p>
+          </article>
+          <article class="card">
+            <div class="card__badge">Area</div>
+            <h3 class="card__title">Communication</h3>
+            <p class="card__description">Help with social media, content creation, and storytelling to amplify our mission.</p>
+          </article>
+          <article class="card">
+            <div class="card__badge">Area</div>
+            <h3 class="card__title">Culture</h3>
+            <p class="card__description">Contribute to cultural events, heritage workshops, and artistic activities.</p>
+          </article>
+          <article class="card">
+            <div class="card__badge">Area</div>
+            <h3 class="card__title">Leadership</h3>
+            <p class="card__description">Mentor youth and facilitate leadership development programs.</p>
+          </article>
+          <article class="card">
+            <div class="card__badge">Area</div>
+            <h3 class="card__title">Recreational Activities</h3>
+            <p class="card__description">Organize sports, games, and recreational events for community well-being.</p>
+          </article>
+          <article class="card">
+            <div class="card__badge">Area</div>
+            <h3 class="card__title">Events</h3>
+            <p class="card__description">Assist in planning and executing community events and fundraisers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section volunteer-form">
+      <div class="container">
+        <h2 class="section__title">Registration Form</h2>
+        <form class="volunteer-form__form" action="#" method="post">
+          <fieldset>
+            <legend class="sr-only">Volunteer registration</legend>
+            <div class="form__group">
+              <label for="vol-name">Name</label>
+              <input type="text" id="vol-name" name="name" required />
+            </div>
+            <div class="form__group">
+              <label for="vol-email">Email</label>
+              <input type="email" id="vol-email" name="email" required />
+            </div>
+            <div class="form__group">
+              <label for="vol-skills">Skills</label>
+              <textarea id="vol-skills" name="skills" rows="3" placeholder="Tell us about your skills and experience"></textarea>
+            </div>
+            <div class="form__group">
+              <label for="vol-availability">Availability</label>
+              <input type="text" id="vol-availability" name="availability" placeholder="e.g. Weekends, 10 hours/week" />
+            </div>
+            <div class="form__group">
+              <label for="vol-motivation">Motivation</label>
+              <textarea id="vol-motivation" name="motivation" rows="4" placeholder="Why do you want to volunteer with FUCISPAC?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Submit Application</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/volunteering.js"></script>
+  <script>
+    fetch('partials/header.html').then(r => r.text()).then(html => { document.getElementById('header').innerHTML = html; const s = document.createElement('script'); s.src = 'js/header.js'; document.body.appendChild(s); });
+    fetch('partials/footer.html').then(r => r.text()).then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+</body>
+</html>

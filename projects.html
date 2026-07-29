@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUCISPAC Projects — Community Education, Women's Empowerment & More</title>
+  <meta name="description" content="Explore FUCISPAC's projects in community education, women's empowerment, youth leadership, and Afro culture and memory." />
+  <meta property="og:title" content="FUCISPAC Projects — Community Education, Women's Empowerment & More" />
+  <meta property="og:description" content="Explore FUCISPAC's projects in community education, women's empowerment, youth leadership, and Afro culture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fucispac.org/projects.html" />
+  <meta property="og:image" content="https://www.fucispac.org/img/og-projects.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.fucispac.org/projects.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body data-page="projects">
+  <div id="header"></div>
+
+  <main>
+    <section class="page-banner">
+      <img class="page-banner__bg" src="img/projects-banner.webp" alt="" aria-hidden="true" />
+      <div class="page-banner__overlay"></div>
+      <div class="container page-banner__content">
+        <h1>Our Projects</h1>
+        <p class="page-banner__text">Creating lasting impact through community-driven initiatives.</p>
+      </div>
+    </section>
+
+    <section class="section projects">
+      <div class="container">
+        <div class="projects__grid">
+          <article class="card">
+            <img src="img/project-education.webp" alt="Community education program" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">Education</div>
+            <h3 class="card__title">Community Education</h3>
+            <p class="card__description"><strong>Objective:</strong> Provide quality educational support to Afro-Colombian children and youth.<br /><strong>Beneficiaries:</strong> 200+ children and youth in Cali.<br /><strong>Results:</strong> Improved academic performance and school retention.</p>
+            <div class="card__actions">
+              <a href="#" class="btn btn--primary">Learn more</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/project-women.webp" alt="Women empowerment initiative" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">Empowerment</div>
+            <h3 class="card__title">Women's Empowerment</h3>
+            <p class="card__description"><strong>Objective:</strong> Strengthen leadership and economic autonomy of Afro-Colombian women.<br /><strong>Beneficiaries:</strong> 150+ women.<br /><strong>Results:</strong> Business training and community leadership development.</p>
+            <div class="card__actions">
+              <a href="#" class="btn btn--primary">Learn more</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/project-youth.webp" alt="Youth leadership program" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">Leadership</div>
+            <h3 class="card__title">Youth Leadership</h3>
+            <p class="card__description"><strong>Objective:</strong> Develop leadership skills and civic engagement among Afro-Colombian youth.<br /><strong>Beneficiaries:</strong> 100+ young leaders.<br /><strong>Results:</strong> Community projects led by youth.</p>
+            <div class="card__actions">
+              <a href="#" class="btn btn--primary">Learn more</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/project-culture.webp" alt="Afro culture and memory program" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">Culture</div>
+            <h3 class="card__title">Afro Culture and Memory</h3>
+            <p class="card__description"><strong>Objective:</strong> Preserve and promote Afro-Colombian cultural heritage.<br /><strong>Beneficiaries:</strong> Community-wide.<br /><strong>Results:</strong> Cultural events, workshops, and memory documentation.</p>
+            <div class="card__actions">
+              <a href="#" class="btn btn--primary">Learn more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/projects.js"></script>
+  <script>
+    fetch('partials/header.html').then(r => r.text()).then(html => { document.getElementById('header').innerHTML = html; const s = document.createElement('script'); s.src = 'js/header.js'; document.body.appendChild(s); });
+    fetch('partials/footer.html').then(r => r.text()).then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+</body>
+</html>

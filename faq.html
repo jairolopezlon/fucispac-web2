@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUCISPAC FAQ — Frequently Asked Questions</title>
+  <meta name="description" content="Find answers to frequently asked questions about FUCISPAC, how to support, and how to participate in our projects." />
+  <meta property="og:title" content="FUCISPAC FAQ — Frequently Asked Questions" />
+  <meta property="og:description" content="Find answers to frequently asked questions about FUCISPAC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fucispac.org/faq.html" />
+  <meta property="og:image" content="https://www.fucispac.org/img/og-faq.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.fucispac.org/faq.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+</head>
+<body data-page="faq">
+  <div id="header"></div>
+
+  <main>
+    <section class="page-banner page-banner--short">
+      <div class="page-banner__overlay" style="background:var(--azul-cispac);"></div>
+      <div class="container page-banner__content">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container">
+        <div class="faq__list">
+          <details class="faq__item" data-faq>
+            <summary class="faq__question" aria-expanded="false">
+              What does FUCISPAC do?
+              <span class="material-symbols-outlined faq__icon">add</span>
+            </summary>
+            <div class="faq__answer">
+              <p>FUCISPAC is a foundation dedicated to transforming the lives of Afro-Colombian children, youth, and women through education, cultural preservation, and community empowerment programs.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-faq>
+            <summary class="faq__question" aria-expanded="false">
+              How can I support the organization?
+              <span class="material-symbols-outlined faq__icon">add</span>
+            </summary>
+            <div class="faq__answer">
+              <p>You can support us by making a donation, volunteering your time and skills, or partnering with us as a corporate sponsor. Visit our Donations page for more information.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-faq>
+            <summary class="faq__question" aria-expanded="false">
+              How can I participate in the projects?
+              <span class="material-symbols-outlined faq__icon">add</span>
+            </summary>
+            <div class="faq__answer">
+              <p>You can participate by joining as a volunteer, attending our community events, or contacting us directly to explore collaboration opportunities in your area of interest.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-faq>
+            <summary class="faq__question" aria-expanded="false">
+              Where does FUCISPAC work?
+              <span class="material-symbols-outlined faq__icon">add</span>
+            </summary>
+            <div class="faq__answer">
+              <p>FUCISPAC primarily works in Cali and the Valle del Cauca region of Colombia, focusing on Afro-Colombian communities.</p>
+            </div>
+          </details>
+          <details class="faq__item" data-faq>
+            <summary class="faq__question" aria-expanded="false">
+              Is my donation tax-deductible?
+              <span class="material-symbols-outlined faq__icon">add</span>
+            </summary>
+            <div class="faq__answer">
+              <p>FUCISPAC is a registered nonprofit organization. Donations may be tax-deductible in Colombia. Please contact us for specific information regarding tax receipts.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/faq.js"></script>
+  <script>
+    fetch('partials/header.html').then(r => r.text()).then(html => { document.getElementById('header').innerHTML = html; const s = document.createElement('script'); s.src = 'js/header.js'; document.body.appendChild(s); });
+    fetch('partials/footer.html').then(r => r.text()).then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+</body>
+</html>

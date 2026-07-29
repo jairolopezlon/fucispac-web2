@@ -1,0 +1,39 @@
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery {
+  background-color: var(--azul-cispac-06);
+}
+
+.gallery__mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery__mosaic img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-tarjeta);
+  transition: transform 0.2s ease;
+}
+
+.gallery__mosaic img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .gallery__mosaic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery__mosaic {
+    grid-template-columns: 1fr;
+  }
+}

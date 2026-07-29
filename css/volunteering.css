@@ -1,0 +1,68 @@
+.why-volunteer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.why-volunteer__content p {
+  color: var(--texto-gris);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.why-volunteer__content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.why-volunteer__content li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--negro-texto);
+  font-weight: 500;
+}
+
+.why-volunteer__content .material-symbols-outlined {
+  color: var(--azul-cispac);
+}
+
+.why-volunteer__grid img {
+  border-radius: var(--radius-hero);
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.volunteer-areas {
+  background-color: var(--azul-cispac-06);
+}
+
+.volunteer-areas__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.volunteer-form {
+  background-color: var(--blanco-calido);
+}
+
+.volunteer-form__form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.volunteer-form__form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .why-volunteer__grid {
+    grid-template-columns: 1fr;
+  }
+}

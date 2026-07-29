@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact FUCISPAC — Get in Touch</title>
+  <meta name="description" content="Contact FUCISPAC. Send us a message, find our address, email, and social media." />
+  <meta property="og:title" content="Contact FUCISPAC — Get in Touch" />
+  <meta property="og:description" content="Contact FUCISPAC. Send us a message, find our address, email, and social media." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fucispac.org/contact.html" />
+  <meta property="og:image" content="https://www.fucispac.org/img/og-contact.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.fucispac.org/contact.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body data-page="contact">
+  <div id="header"></div>
+
+  <main>
+    <section class="page-banner">
+      <img class="page-banner__bg" src="img/contact-banner.webp" alt="" aria-hidden="true" />
+      <div class="page-banner__overlay"></div>
+      <div class="container page-banner__content">
+        <h1>We Are Here to Listen</h1>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <div class="contact__grid">
+          <form class="contact__form" action="#" method="post">
+            <h2 class="section__title" style="text-align:left;">Send Us a Message</h2>
+            <fieldset>
+              <legend class="sr-only">Contact form</legend>
+              <div class="form__group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="form__group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form__group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="form__group form__captcha">
+                <input type="checkbox" id="captcha" name="captcha" required />
+                <label for="captcha">I am not a robot</label>
+              </div>
+              <button type="submit" class="btn btn--primary">Send Message</button>
+            </fieldset>
+          </form>
+          <aside class="contact__info">
+            <h2 class="section__title" style="text-align:left;">Institutional Information</h2>
+            <address>
+              <div class="contact__info-block">
+                <span class="material-symbols-outlined">location_on</span>
+                <div>
+                  <strong>Address</strong>
+                  <p>Cali, Valle del Cauca, Colombia</p>
+                </div>
+              </div>
+              <div class="contact__info-block">
+                <span class="material-symbols-outlined">mail</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:info@fucispac.org">info@fucispac.org</a></p>
+                </div>
+              </div>
+              <div class="contact__info-block">
+                <span class="material-symbols-outlined">share</span>
+                <div>
+                  <strong>Social Media</strong>
+                  <div class="contact__social">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                  </div>
+                </div>
+              </div>
+            </address>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    fetch('partials/header.html').then(r => r.text()).then(html => { document.getElementById('header').innerHTML = html; const s = document.createElement('script'); s.src = 'js/header.js'; document.body.appendChild(s); });
+    fetch('partials/footer.html').then(r => r.text()).then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+</body>
+</html>

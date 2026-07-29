@@ -1,0 +1,109 @@
+.hero--donations .hero__title {
+  font-size: 2.5rem;
+}
+
+.why-donate {
+  background-color: var(--blanco-calido);
+}
+
+.why-donate__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.why-donate__card {
+  padding: 2rem 1.5rem;
+  background-color: var(--azul-cispac-06);
+  border-radius: var(--radius-tarjeta);
+  border-left: 5px solid var(--azul-cispac);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.why-donate__icon {
+  font-size: 2.5rem;
+  color: var(--azul-cispac);
+  margin-bottom: 1rem;
+}
+
+.why-donate__card h3 {
+  font-size: 1.25rem;
+  color: var(--negro-texto);
+  margin-bottom: 0.5rem;
+}
+
+.why-donate__card p {
+  color: var(--texto-gris);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.ways-to-donate {
+  background-color: var(--azul-cispac-06);
+}
+
+.ways-to-donate__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.impact {
+  background-color: var(--blanco-calido);
+}
+
+.impact__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.impact__stat {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--azul-cispac-06);
+  border-radius: var(--radius-tarjeta);
+}
+
+.impact__stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--rojo-cispac);
+  margin-bottom: 0.5rem;
+}
+
+.impact__stat-label {
+  font-size: 0.875rem;
+  color: var(--texto-gris);
+}
+
+.impact__cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.invitation .container {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .why-donate__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .impact__stats {
+    grid-template-columns: 1fr;
+  }
+}

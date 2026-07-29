@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUCISPAC Events — Community Activities and Gallery</title>
+  <meta name="description" content="Stay updated with FUCISPAC's events and activities. View our calendar and previous events gallery." />
+  <meta property="og:title" content="FUCISPAC Events — Community Activities and Gallery" />
+  <meta property="og:description" content="Stay updated with FUCISPAC's events and activities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fucispac.org/events.html" />
+  <meta property="og:image" content="https://www.fucispac.org/img/og-events.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.fucispac.org/events.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/events.css" />
+</head>
+<body data-page="events">
+  <div id="header"></div>
+
+  <main>
+    <section class="page-banner">
+      <img class="page-banner__bg" src="img/events-banner.webp" alt="" aria-hidden="true" />
+      <div class="page-banner__overlay"></div>
+      <div class="container page-banner__content">
+        <h1>Events and Activities</h1>
+      </div>
+    </section>
+
+    <section class="section events-calendar">
+      <div class="container">
+        <h2 class="section__title">Upcoming Events</h2>
+        <div class="events__grid">
+          <article class="card">
+            <img src="img/event-1.webp" alt="Community workshop" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">June 2026</div>
+            <h3 class="card__title">Cultural Identity Workshop</h3>
+            <p class="card__description">Location: Cali Community Center. A hands-on workshop exploring Afro-Colombian traditions and heritage.</p>
+          </article>
+          <article class="card">
+            <img src="img/event-2.webp" alt="Youth leadership event" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">July 2026</div>
+            <h3 class="card__title">Youth Leadership Forum</h3>
+            <p class="card__description">Location: Valle del Cauca. Empowering young Afro-Colombian leaders through training and networking.</p>
+          </article>
+          <article class="card">
+            <img src="img/event-3.webp" alt="Women's empowerment gathering" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:var(--radius-tarjeta);margin-bottom:1rem;" />
+            <div class="card__badge">August 2026</div>
+            <h3 class="card__title">Women's Empowerment Gathering</h3>
+            <p class="card__description">Location: Cali. A space for Afro-Colombian women to share experiences and build networks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery">
+      <div class="container">
+        <h2 class="section__title">Previous Events Gallery</h2>
+        <div class="gallery__mosaic">
+          <img src="img/gallery-1.webp" alt="Event photo 1" loading="lazy" />
+          <img src="img/gallery-2.webp" alt="Event photo 2" loading="lazy" />
+          <img src="img/gallery-3.webp" alt="Event photo 3" loading="lazy" />
+          <img src="img/gallery-4.webp" alt="Event photo 4" loading="lazy" />
+          <img src="img/gallery-5.webp" alt="Event photo 5" loading="lazy" />
+          <img src="img/gallery-6.webp" alt="Event photo 6" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/events.js"></script>
+  <script>
+    fetch('partials/header.html').then(r => r.text()).then(html => { document.getElementById('header').innerHTML = html; const s = document.createElement('script'); s.src = 'js/header.js'; document.body.appendChild(s); });
+    fetch('partials/footer.html').then(r => r.text()).then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+</body>
+</html>
